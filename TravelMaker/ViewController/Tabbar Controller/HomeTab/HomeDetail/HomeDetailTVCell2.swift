@@ -10,9 +10,16 @@ import UIKit
 
 class HomeDetailTVCell2: UITableViewCell {
     
-    @IBOutlet weak var numLabel: UILabel!
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var commentLabel: UILabel!
+    @IBOutlet weak var numLB: UILabel!
+    @IBOutlet weak var titleLB: UILabel!
+    @IBOutlet weak var commentLB: UILabel!
+    
+    func configure(apply : BoardData){
+        
+        titleLB.text = apply.boardTitle
+        commentLB.text = (String)(apply.commentCount)
+      
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -90,7 +90,9 @@ class FavoriteVC: UIViewController, UITableViewDelegate, UITableViewDataSource, 
     
     //테이블 뷰 셀 선택사항 추후 구현
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("select favorite expert!")
+        let showExpertVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ExpertDetailVC") as! ExpertDetailVC
+        self.navigationController?.pushViewController(showExpertVC, animated: true)
+
     }
     
     //***CollectionView Function***
@@ -127,10 +129,10 @@ class FavoriteVC: UIViewController, UITableViewDelegate, UITableViewDataSource, 
     
     //콜렉션뷰 셀 선택 사항 추후 구현
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("select favorite country!")
+        let showCountryVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "HomeDetailVC") as! HomeDetailVC
+        self.navigationController?.pushViewController(showCountryVC, animated: true)
     }
     
-
     
 }
 

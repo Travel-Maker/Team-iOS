@@ -12,10 +12,10 @@ class WriteApplyTVCell1: UITableViewCell {
 
     @IBOutlet weak var outDateTextField: UITextField!
     @IBOutlet weak var outCityTextField: UITextField!
-    @IBOutlet weak var houseDateTextField: UITextField!
     @IBOutlet weak var houseTextField: UITextField!
     @IBOutlet weak var inDateTextField: UITextField!
     @IBOutlet weak var inCityTextField: UITextField!
+   
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

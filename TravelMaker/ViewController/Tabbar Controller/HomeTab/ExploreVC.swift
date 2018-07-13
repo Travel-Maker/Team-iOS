@@ -14,7 +14,10 @@ class ExploreVC: UIViewController {
         super.viewDidLoad()
 
     }
-
+    @IBAction func cancelBtn(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     
 
    

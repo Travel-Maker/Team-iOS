@@ -26,9 +26,18 @@ class HomeVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UICo
        
     }
     
+    @IBAction func searchBtn(_ sender: Any) {
+        if let SearchVC = storyboard?.instantiateViewController(withIdentifier: "ExploreVC") as? ExploreVC {
+            self.present(SearchVC, animated: true, completion: {
+                // present 이후 실행될 것.
+            })
+        }
+
+    }
+    
     @IBAction func countryBtnPressed(_ sender: Any) {
         guard let HomeDetailVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "HomeDetailVC") as? HomeDetailVC else
-        { return }
+        { return print("this")}
         
         self.navigationController?.pushViewController(HomeDetailVC, animated: true)
     }
@@ -77,6 +86,7 @@ class HomeVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UICo
         return 0.00001
     }
     
+    //*** 콜렉션 뷰 관련 ***
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomeCVCell", for: indexPath) as! HomeCVCell
@@ -94,7 +104,7 @@ class HomeVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UICo
     }
     
     
-     //*** 콜렉션 뷰 관련 ***
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
         if sectionNum == 0 {

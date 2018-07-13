@@ -1,20 +1,37 @@
 PODS:
   - Alamofire (4.6.0)
+  - GoogleMaps (2.5.0):
+    - GoogleMaps/Maps (= 2.5.0)
+  - GoogleMaps/Base (2.5.0)
+  - GoogleMaps/Maps (2.5.0):
+    - GoogleMaps/Base
+  - GooglePlaces (2.5.0):
+    - GoogleMaps/Base (= 2.5.0)
   - naveridlogin-sdk-ios (4.0.9)
+  - SwiftyJSON (4.1.0)
 
 DEPENDENCIES:
   - Alamofire
+  - GoogleMaps
+  - GooglePlaces
   - naveridlogin-sdk-ios
+  - SwiftyJSON
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  https://github.com/cocoapods/specs.git:
     - Alamofire
+    - GoogleMaps
+    - GooglePlaces
     - naveridlogin-sdk-ios
+    - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  GoogleMaps: c087b8e5dfe87ca6ebf59adb9b4894a4146bec4f
+  GooglePlaces: dd70d9d71ea1c7944846afe67de3712c99b30a77
   naveridlogin-sdk-ios: 16d901a8a3120f84432088e68dd8306e7030c3cb
+  SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
 
-PODFILE CHECKSUM: 6fec7996c3b57a5ac68aac2566bc3aebd64b7718
+PODFILE CHECKSUM: 6002cc02dd85da8914bd341421af54219b5e8d7a
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.5.3

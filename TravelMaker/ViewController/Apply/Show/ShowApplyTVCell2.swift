@@ -11,15 +11,16 @@ import UIKit
 class ShowApplyTVCell2: UITableViewCell {
 
     @IBOutlet weak var repleProfileImage: UIImageView!
+    @IBOutlet weak var userInfo: UILabel!
+    @IBOutlet weak var commentContent: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    func configure3(comment: Comment, content: CommentData){
+        userInfo.text = comment.userInfo
+        commentContent.text = content.commentContent
     }
-
 }

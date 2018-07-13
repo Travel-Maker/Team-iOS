@@ -12,6 +12,7 @@ class ReceivePlanVC: UIViewController, UITableViewDataSource, UITableViewDelegat
     
     @IBOutlet weak var receivePlanTV: UITableView!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.receivePlanTV.delegate = self;
@@ -43,6 +44,12 @@ class ReceivePlanVC: UIViewController, UITableViewDataSource, UITableViewDelegat
             return cell
         }
     
-
-}
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let acceptVC = storyboard?.instantiateViewController(withIdentifier: "AcceptApplyVC") as? AcceptApplyVC {
+            self.present(acceptVC, animated: true, completion: {
+                
+            })
+        }
+    }
 }

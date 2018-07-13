@@ -39,9 +39,15 @@ class MoreExpertVC: UIViewController, UITableViewDelegate, UITableViewDataSource
         cell.crownImage.image = #imageLiteral(resourceName: "blue_crown_master")
         cell.typeLabel.text = "먹방형"
         cell.cityLabel.text = "목동"
-        cell.starRateImage.image = #imageLiteral(resourceName: "expert_img_2")
+        cell.starRateImage.image = #imageLiteral(resourceName: "star4")
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let expertDetailVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ExpertDetailVC") as! ExpertDetailVC
+        
+        self.navigationController?.pushViewController(expertDetailVC, animated: true)
     }
     
     @IBAction func showFilter(_ sender: Any) {

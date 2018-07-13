@@ -47,4 +47,15 @@ class SendPlanVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         }
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.section == 1 {
+            if let ShowVC = storyboard?.instantiateViewController(withIdentifier: "ShowSimpleApplyVC") as? ShowSimpleApplyVC {
+                self.present(ShowVC, animated: true, completion: {
+                    
+                })
+            }
+        }
+        
+    }
+    
 }

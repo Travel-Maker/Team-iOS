@@ -8,12 +8,14 @@
 
 import UIKit
 
-class JoinVC: UIViewController, UITextFieldDelegate {
+class JoinVC: UIViewController, UITextFieldDelegate, APIService {
 
     let userdefault = UserDefaults.standard
+    //let UserData = [[String : Any]]()
     
     @IBOutlet weak var nickNameTextField: UITextField!
     
+     let userId : String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +26,11 @@ class JoinVC: UIViewController, UITextFieldDelegate {
     
     @IBAction func pressedJoinBtn(_ sender: Any) {
             enterHome()
-        
+    
+    }
+    
+    func joinOkHandler(_ sender:UIAlertAction) -> Void {
+        self.navigationController?.popViewController(animated: false)
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {

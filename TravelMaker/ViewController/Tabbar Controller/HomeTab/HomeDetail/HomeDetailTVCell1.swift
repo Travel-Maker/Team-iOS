@@ -10,24 +10,29 @@ import UIKit
 
 class HomeDetailTVCell1: UITableViewCell {
 
-    @IBOutlet weak var expertProfile1: UIImageView!
-    @IBOutlet weak var expertProfile2: UIImageView!
-    @IBOutlet weak var expertProfile3: UIImageView!
-    @IBOutlet weak var nickName1: UILabel!
-    @IBOutlet weak var nickName2: UILabel!
-    @IBOutlet weak var nickName3: UILabel!
-    @IBOutlet weak var tourType1: UILabel!
-    @IBOutlet weak var tourType2: UILabel!
-    @IBOutlet weak var tourType3: UILabel!
-    @IBOutlet weak var City1: UILabel!
-    @IBOutlet weak var City2: UILabel!
-    @IBOutlet weak var City3: UILabel!
-    @IBOutlet weak var starRateImage1: UIImageView!
-    @IBOutlet weak var starRateImage2: UIImageView!
-    @IBOutlet weak var starRateImage3: UIImageView!
-    @IBOutlet weak var starRateLB1: UILabel!
-    @IBOutlet weak var starRateLB2: UILabel!
-    @IBOutlet weak var starRateLB3: UILabel!
+    @IBOutlet weak var expertProfileIMG: UIImageView!
+    @IBOutlet weak var expertNicknameLB: UILabel!
+    @IBOutlet weak var expertStarRateIMG: UIImageView!
+    @IBOutlet weak var expertTypeLB: UILabel!
+    @IBOutlet weak var expertCityLB: UILabel!
+    @IBOutlet weak var expertStarRateLB: UILabel!
+    
+    @IBOutlet weak var expertProfileIMG2: UIImageView!
+    @IBOutlet weak var expertNicknameLB2: UILabel!
+    @IBOutlet weak var expertTypeLB2: UILabel!
+    @IBOutlet weak var expertCityLB2: UILabel!
+    @IBOutlet weak var expertStarRateIMG2: UIImageView!
+    @IBOutlet weak var expertStarRateLB2: UILabel!
+    
+    @IBOutlet weak var expertProfileIMG3: UIImageView!
+    @IBOutlet weak var expertNicknameLB3: UILabel!
+    @IBOutlet weak var expertTypeLB3: UILabel!
+    @IBOutlet weak var expertCityLB3: UILabel!
+    @IBOutlet weak var expertStarRateIMG3: UIImageView!
+    @IBOutlet weak var expertStarRateLB3: UILabel!
+    
+    
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()

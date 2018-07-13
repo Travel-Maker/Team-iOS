@@ -19,10 +19,16 @@ class ExpertDetailVC: UIViewController {
         //backgroundImage = UIImage
     }
     
-    
+    override func viewWillAppear(_ animated: Bool) {
+        makeNavImg()
+    }
     @IBAction func applyPressed(_ sender: Any) {
         
-        //스케줄 맡기기 뷰 이동 구현
+        if let goGiveApplyVC = storyboard?.instantiateViewController(withIdentifier: "ExpertApplyVC") as? ExpertApplyVC {
+            self.present(goGiveApplyVC, animated: true, completion: {
+                
+            })
+        }
         
     }
     

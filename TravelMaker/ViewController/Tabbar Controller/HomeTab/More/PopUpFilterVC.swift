@@ -27,6 +27,9 @@ class PopUpFilterVC
         self.removeAnimate()
         self.view.removeFromSuperview()
     }
+    @IBAction func setFilter(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
     
     
     func showAnimate()

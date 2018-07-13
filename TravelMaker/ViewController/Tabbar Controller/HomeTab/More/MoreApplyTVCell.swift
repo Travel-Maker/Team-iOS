@@ -19,10 +19,18 @@ class MoreApplyTVCell: UITableViewCell {
         // Initialization code
     }
     
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
+    func configure(apply : BoardData){
         
-        // Configure the view for the selected state
+        titleLabel.text = apply.boardTitle
+        commentLabel.text = (String)(apply.commentCount)
+        //print("\(apply.boardTitle)")
+        
+        
+        //사진 추가
+//        if let url = URL(string: gsno(store.storePhoto)){
+//            self.storeImageView.kf.setImage(with: url)
+//        } else {
+//            self.storeImageView.image = #imageLiteral(resourceName: "grocery")
+//        }
     }
-    
 }

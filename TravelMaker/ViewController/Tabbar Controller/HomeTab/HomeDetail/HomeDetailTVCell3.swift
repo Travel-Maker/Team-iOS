@@ -10,7 +10,7 @@ import UIKit
 
 class HomeDetailTVCell3: UITableViewCell {
 
-    @IBOutlet weak var applyMorePressed: UIButton!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

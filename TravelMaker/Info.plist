@@ -41,6 +41,12 @@
 	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>사진 촬영을 위해 카메라 접근을 허용해 주세요 :)</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>장소탐색을 위해 허용해 주세요 :)</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>앨범 접근을 위해 허가해 주세요 :)</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>NotoSansKR-Thin-Windows</string>
@@ -58,8 +64,6 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
